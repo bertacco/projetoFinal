@@ -30,7 +30,7 @@
 	<section class="menu-texto">
 		<div class="container">
 			<nav class="sub-header-menu">
-				<button class="menu-botoes">Maltes</button>
+				<button id="botaomalte" class="menu-botoes">Maltes</button>
 				<button class="menu-botoes">Lúpulos</button>
 				<button class="menu-botoes">Leveduras</button>
 				<button class="menu-botoes">Tutoriais</button>
@@ -38,17 +38,108 @@
 		</div>
 	</section>
 	<section class="main">
-		<div class="container">
-
-			<p>é aqui que tudo acontece</p>
-			<p>começa com um carrossel</p>
-			<p>depois pode ter cards com os produtos</p>
-			<p>é onde aparece o carrinho</p>
-			<p>já os tutoriais serao em outro html</p>
 
 
+		<div id="carrossel"	class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./images/carrossel01.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/carrossel02.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/carrossel03.jpg" style="width:100%">
+      </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>	     
+                 
+	    <div style="text-align:center">
+	      <span class="dot" onclick="currentSlide(1)"></span>
+	      <span class="dot" onclick="currentSlide(2)"></span>
+	      <span class="dot" onclick="currentSlide(3)"></span>
+	    </div>
+    </div>
+
+		<div id="maltes" class="cards-container desligado">
+				
+				<div id="card01" class="card">
+					<img src="./images/malte01.jpg" alt="malte 01">
+					<h3>Malte tipo 01</h3>
+					<div class="descricao">
+						<p>Um malte bom, balanceado com sabor de quero mais</p>
+					</div>
+					<p>EBC 13</p>
+					<p>R$12,00 / kg</p>
+					<input type="number" placeholder="QTD" step="1" min="0"> <br>
+					<button type="submit">Adicionar ao carrinho</button>
+				</div>
+
+				<div id="card02" class="card">
+					<img src="./images/malte02.jpg" alt="malte 02">
+					<h3>Malte tipo 02</h3>
+					<div class="descricao">
+						<p>Um malte meia boca, mas com um excelente custo benefício</p>
+					</div>
+					<p>EBC 11</p>
+					<p>R$3,00 / kg</p>
+					<input type="number" placeholder="QTD" step="1" min="0"> <br>
+					<button type="submit">Adicionar ao carrinho</button>
+				</div>
+
+				<div id="card03" class="card">
+					<img src="./images/malte03.jpg" alt="malte 03">
+					<h3>Malte tipo 03</h3>
+					<div class="descricao">
+						<p>Um malte bom demais, valea a pena, com sabor tostado, uma delícia</p>
+					</div>
+					<p>EBC 14</p>
+					<p>R$10,00 / kg</p>
+					<input type="number" placeholder="QTD" step="1" min="0"> <br>
+					<button type="submit">Adicionar ao carrinho</button>
+				</div>
+
+				<div id="card04" class="card">
+					<img src="./images/malte04.jpg" alt="malte 04">
+					<h3>Malte tipo 04</h3>
+					<div class="descricao">
+						<p>Um malte escuro, perfeito para cervejas do tipo stout ou escuras em geral</p>
+					</div>
+					<p>EBC 77</p>
+					<p>R$9,00 / kg</p>
+					<input type="number" placeholder="QTD" step="1" min="0"> <br>
+					<button type="submit">Adicionar ao carrinho</button>
+				</div>
+
+				<div id="card05" class="card">
+					<img src="./images/malte05.jpg" alt="malte 05">
+					<h3>Malte tipo 05</h3>
+					<div class="descricao">
+						<p>Malte de trigo, para cervajas do tipo weiss</p>
+					</div>
+					<p>EBC 13</p>
+					<p>R$8,00 / kg</p>
+					<input type="number" placeholder="QTD" step="1" min="0"> <br>
+					<button type="submit">Adicionar ao carrinho</button>
+				</div>
+
+
+				
+			
+
+				
+
+
+
+
+
+
+			</div>
+
+			
 		</div>
-		
+
+
+
 
 	</section>
 	
